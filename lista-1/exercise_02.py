@@ -53,8 +53,8 @@ def vdmI(testSet, trainingSet, classes, a):
     for c in classes:
         print "c" + c
         print "a" + repr(a)
-        print "x[a]" + repr(trainingSet)
-        ax = [x for x in trainingSet if x[a] == _x]
+        print "x[a]" + repr(testSet)
+        ax = [x for x in trainingSet if x[1] == _x]
         print "ax: " + repr(ax)
         nax = len(ax)
         print "nax: " + nax
