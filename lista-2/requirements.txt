@@ -1,0 +1,5 @@
+numpy==1.14.2
+matplotlib==2.2.2
+sklearn==0.0
+pandas==0.22.0
+liac-arff==2.2.1
