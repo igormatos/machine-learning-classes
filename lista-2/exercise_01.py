@@ -100,7 +100,7 @@ def main():
             attrs_t.append("%s@%s" % (attr[0], attr[1]))
 
     # Learning Vector Quantization
-    useLqv = 1
+    useLqv = 1 #deixando false, nao e usado o LQV
 
     # Transformando os dados em DataFrame
     df = pd.DataFrame(data=dataArff['data'], columns=attrs_t)
@@ -109,6 +109,8 @@ def main():
         lrate = 0.3
         n_epochs = 80
         n_prototypes = 20
+		
+		# trocar lqv21 por lqv1
         prototypes = lqv21(dataArff['data'], n_prototypes, lrate, n_epochs)
 
         df = pd.DataFrame(data=prototypes, columns=attrs_t)
